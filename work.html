@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <style>
+    .container {
+       width: 90%;
+       align-content: center;
+       align-items: center;
+       margin: 20px auto;
+    }
+    .name {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 50px 0px 50px 0px;
+      color: black;
+      /* text-align: center; */
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .myPhoto {
+      width: 250px;
+      max-height: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+    }
+    .grid {
+        margin: 80px auto;
+        display: grid;
+        grid-row-gap: 50px;
+    }
+    .project {
+        box-shadow: 0 4px 8px rgba(15, 14, 14, 0.15);
+        border-radius: 4px;
+        display: block;
+        /* border:1px solid grey; */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: 200;
+        color: black;
+        /* text-align: center; */
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .title {
+        margin:0px 8px 8px 8px;
+        font-weight: 700;
+        font-size: 16px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .desc{
+        margin:0px 8px 0px 8px;
+        font-weight: 200;
+        font-size: 14px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .about{
+        margin:0px 8px 0px 8px;
+      text-decoration: underline;
+      color: grey;
+      display:block;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .no-underline {
+      text-decoration: none;
+    }
+    .project:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+  </style>
+  <body id="root">
+    <div class="container">
+      <div class="grid">
+          <div class="project">
+            <h3 class="title">Cross-Platform App Development | Flipkart (Apr 2018 - Present)</h3>
+            <p class="desc">Working with React Native and TypeScript to ship out the new features like Flipkart Plus membership and Shop the look in Lifestyle for all the three platforms - Web, IOS, Android.
+                </p> 
+            <a href="https://www.toshigupta.com/crossplatform" class="about"> <b>Know More</b> </a>
+          </div>
+          <div class="project">
+                <h3 class="title">Cart/Checkout and Payments | Flipkart (Sept 2017 - Present) </h3>
+                <p class="desc">As a core member of the UI team for cart, checkout, and payments at Flipkart, I built various user-centric flows on this funnel. </p>
+                <a href="https://www.toshigupta.com/richviews" class="about"> <b>Know More</b> </a>
+            </div>
+            <div class="project">
+                    <h3 class="title">Progressive Web Applications-Mobile Website| Flipkart Lite | Flipkart (Dec 2016- Dec 2017)</h3>
+                    <p class="desc">Designed, developed and maintained various features on the mobile website of Flipkart - Flipkart Lite,which is India's one of the first PWAs. Rresposible for building, testing nad maintaining features of cross-sell and login on the website</p>
+                  </div>
+            <div class="project">
+                    <h3 class="title">Gamification - Bid and Win | Flipkart (Jul 2017- Sept 2017)</h3>
+                    <p class="desc">Designed, developed and tested the game on the e-commerce platform called Bid and Win to get traction from users during the same days.</p>
+                  </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="index.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,11 +1,76 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#16be48" id="themeColor">
-    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" charset="utf-8">
-</head>
-<body id="canvas-root">
-    <canvas tabindex="0" style="border:2px solid #000000;" id="myCanvas"></canvas>
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <style>
+    .name {
+      font-size: 54px;
+      font-weight: 500;
+      margin-top: 100px;
+      color: black;
+      text-align: center;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .myPhoto {
+      width: 250px;
+      max-height: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+    }
+    .grid {
+      margin: 80px auto;
+      display: grid;
+      grid-column-gap: 50px;
+      grid-template-columns: auto auto auto;
+    }
+    .desc {
+      font-size: 30px;
+      font-weight: 200;
+      color: black;
+      text-align: center;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .about{
+      text-decoration: underline;
+      color: grey;
+      text-align:center;
+      display:block;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .no-underline {
+      text-decoration: none;
+    }
+  </style>
+  <body id="root">
+    <div>
+      <h1 class="name"> Hi! I am Toshi.</h1>
+      <a href="aboutme.html" class="about">About me</a>
+      <!-- <img src="./myPhoto.jpg" class="myPhoto" /> -->
+      <div class="grid">
+        <div>
+            <a href="academia.html" class="no-underline ">
+                <img src="./academics.png" class="myPhoto" />
+                <h2 class="desc">Academic Projects</h2>
+            </a>
+        </div>
+        <div>
+            <a href="work.html" class="no-underline">
+            <img src="./work-experience.png" class="myPhoto" />
+            <h2 class="desc">Work Experience</h2>
+            </a>
+          </div>
+          <div>
+              <a href="extra.html" class="no-underline" >
+              <img src="./volunteer.png" class="myPhoto" />
+              <h2 class="desc">Extra Cirriculars</h2>
+              </a>
+          </div>
+      </div>
+    </div>
+
     <script type="text/javascript" src="index.js" charset="utf-8"></script>
 </body>
 </html>

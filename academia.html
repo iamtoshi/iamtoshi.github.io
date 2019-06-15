@@ -7,85 +7,72 @@
     .container {
         margin-left: 80px;
     }
-    .name {
+    div.container p#name {
       font-size: 16px;
       font-weight: 500;
-      margin: 50px 0px 50px 0px;
       color: black;
       /* text-align: center; */
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    }
-    .myPhoto {
-      width: 250px;
-      max-height: 400px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 50%;
     }
     .grid {
         margin: 80px auto;
         display: grid;
         grid-row-gap: 50px;
     }
-    .project {
+    div.grid div {
         box-shadow: 0 4px 8px rgba(15, 14, 14, 0.15);
         border-radius: 4px;
         display: block;
-        /* border:1px solid grey; */
         width:80%;
         font-weight: 200;
         color: black;
-        /* text-align: center; */
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    .title {
+    div.grid div h3 {
         margin-left:8px;
         font-weight: 700;
         font-size: 16px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    .desc{
+    div.grid div p{
         margin-left:8px;
         font-weight: 200;
         font-size: 14px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    .about{
-      text-decoration: underline;
-      color: grey;
-      text-align:center;
-      display:block;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    }
-    .no-underline {
-      text-decoration: none;
-    }
-    .project:hover {
+    div.grid div:hover {
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         opacity: 1;
         transition: opacity 0.3s ease-in-out;
     }
-
+    div.container #header{
+      display: flex;
+    }
+    div.container #header img {
+      padding-top: 12px;
+      width: 60px;
+      max-height: 100px;
+    }
   </style>
   <body id="root">
     <div class="container">
-      <p class="name"> I graduated from BITS Pilani, India with a B.E.(Hons) in <b>Computer Science</b>  and MSc.(Hons) in <b>Economics</b> in the year 2016.I had the oppurtunity to do the following projects in the course of 5 years.</p>
+        <div id="header"><a href="index.html"><img src="./back.png" /></a> <h1>ACADEMIC PROJECTS</h1></div>
+      <p id="name"> I graduated from BITS Pilani, India with a B.E.(Hons) in <b>Computer Science</b>  and MSc.(Hons) in <b>Economics</b> in the year 2016.I had the oppurtunity to do the following projects in the course of 5 years.</p>
       <div class="grid">
-          <div class="project">
-            <h3 class="title">Compiler Construction (Feb 2015 - May 2015)</h3>
-            <p class="desc">In this project, I designed a new programming language construct and implemented its compiler. I designed a general-purpose language for the Internet of Things (IoT) by adding features to the existing programming languages. It was a 4-month long project where we implemented lexer, parser, abstract syntax tree and code generator for the same.</p> 
-            <p class="desc"><b>Technologies Used: </b> Python </p>
+          <div>
+            <h3>Compiler Construction (Feb 2015 - May 2015)</h3>
+            <p>In this project, I designed a new programming language construct and implemented its compiler. I designed a general-purpose language for the Internet of Things (IoT) by adding features to the existing programming languages. It was a 4-month long project where we implemented lexer, parser, abstract syntax tree and code generator for the same.</p> 
+            <p><b>Technologies Used: </b> Python </p>
           </div>
-          <div class="project">
-                <h3 class="title">Junk mail filter (Aug 2014 - Nov 2014) </h3>
-                <p class="desc">Designed and developed a filter using Naive Bayesian Classifier with active learning techniques.Compared it with passive learning in terms of accuracy and conditional usage. </p>
-                <p class="desc"><b>Technologies Used: </b> C/C++</p>
+          <div>
+                <h3>Junk mail filter (Aug 2014 - Nov 2014) </h3>
+                <p>Designed and developed a filter using Naive Bayesian Classifier with active learning techniques.Compared it with passive learning in terms of accuracy and conditional usage. </p>
+                <p><b>Technologies Used: </b> C/C++</p>
             </div>
             <div class="project">
-                    <h3 class="title">Economic Analysis of Software Piracy and its implications, Thesis Project (Aug 2014 - Nov 2014)</h3>
-                    <p class="desc">Use of econometric and statistical techniques like hypothesis testing and regression analysis to mine interesting relationships. Analyzing the crossectional data of over 77 countries to determine the major drivers of software piracy.</p>
-                  </div>
+              <h3>Economic Analysis of Software Piracy and its implications, Thesis Project (Aug 2014 - Nov 2014)</h3>
+              <p>Use of econometric and statistical techniques like hypothesis testing and regression analysis to mine interesting relationships. Analyzing the crossectional data of over 77 countries to determine the major drivers of software piracy.</p>
+            </div>
       </div>
     </div>
 

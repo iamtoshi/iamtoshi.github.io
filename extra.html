@@ -10,28 +10,12 @@
        align-items: center;
        margin: 20px auto;
     }
-    .name {
-      font-size: 16px;
-      font-weight: 500;
-      padding: 50px 0px 50px 0px;
-      color: black;
-      /* text-align: center; */
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    }
-    .myPhoto {
-      width: 250px;
-      max-height: 400px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 50%;
-    }
     .grid {
         margin: 80px auto;
         display: grid;
         grid-row-gap: 50px;
     }
-    .project {
+    div.grid div {
         box-shadow: 0 4px 8px rgba(15, 14, 14, 0.15);
         border-radius: 4px;
         display: block;
@@ -43,57 +27,69 @@
         /* text-align: center; */
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    .title {
+    div.grid div h3 {
         margin:0px 8px 8px 8px;
         font-weight: 700;
         font-size: 16px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    .desc{
+    div.grid div p{
         margin:0px 8px 0px 8px;
         font-weight: 200;
         font-size: 14px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    .about{
-        margin:0px 8px 0px 8px;
+    div.grid div a{
+      margin:8px 8px 0px 8px;
       text-decoration: underline;
       color: grey;
       display:block;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
-    .no-underline {
-      text-decoration: none;
-    }
-    .project:hover {
+    div.grid div:hover {
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         opacity: 1;
         transition: opacity 0.3s ease-in-out;
+    }
+    div.container #header{
+      display: flex;
+    }
+    div.container #header img {
+      padding-top: 12px;
+      width: 60px;
+      max-height: 100px;
     }
 
   </style>
   <body id="root">
     <div class="container">
+      <div id="header"><a href="index.html"><img src="./back.png"/></a> <h1>EXTRA CURICULLARS</h1></div>
       <div class="grid">
-          <div class="project">
-            <h3 class="title">Cross-Platform App Development | Flipkart (Apr 2018 - Present)</h3>
-            <p class="desc">Working with React Native and TypeScript to ship out the new features like Flipkart Plus membership and Shop the look in Lifestyle for all the three platforms - Web, IOS, Android.
+          <div>
+            <h3 class="title">Fellowship @ SHENOMICS | 2018</h3>
+            <p class="desc"> I was selected as one of the 20 fellows in "Lead Like a Girl" Fellowship by shenomics throughout India. As part 
+              of the program, I attained mentorship and guidance for 6 months to build my own project idea.
                 </p> 
             <a href="https://www.toshigupta.com/crossplatform" class="about"> <b>Know More</b> </a>
           </div>
-          <div class="project">
-                <h3 class="title">Cart/Checkout and Payments | Flipkart (Sept 2017 - Present) </h3>
-                <p class="desc">As a core member of the UI team for cart, checkout, and payments at Flipkart, I built various user-centric flows on this funnel. </p>
-                <a href="https://www.toshigupta.com/richviews" class="about"> <b>Know More</b> </a>
+            <div class="project">
+                    <h3 class="title">ChoreoCentral | YouTube Dance Channel | 2018 </h3>
+                    <p class="desc">I cofounded a YouTube dance channel where I produced dance chorepgraphy videos.</p>
+                    <a href="https://www.toshigupta.com/choreocentral" class="about"> <b>Know More</b> </a>
+                  </div>
+            <div class="project">
+                    <h3 class="title">Confererences | Speaker </h3>
+                    <p class="desc">I was invited as a speaker at <b>ReactFoo</b> Asia's one of the largest React Confernces. I also have spoken at Devfest by GDG in 2017. 
+                    Apart from this, I have given sessions at various meetups by Google Developer Group, Women Techmakers, Lean In (WiTI) </p>
+                    <a href="https://www.toshigupta.com/conferences" class="about"> <b>Know More</b> </a>
+                  </div>
+            <div class="project">
+                <h3 class="title">Convener | National Youth Conference | 2014 </h3>
+                <p class="desc">
+                  I, with the help of 120 volunteers in my team, organised the first <b>National Youth Conference</b> at BITS Pilani. Right from sponsorship to logistics,
+                  I managed this 3-day long conference which hosted students, speakers and panelists from all over the world.
+                </p>
             </div>
-            <div class="project">
-                    <h3 class="title">Progressive Web Applications-Mobile Website| Flipkart Lite | Flipkart (Dec 2016- Dec 2017)</h3>
-                    <p class="desc">Designed, developed and maintained various features on the mobile website of Flipkart - Flipkart Lite,which is India's one of the first PWAs. Rresposible for building, testing nad maintaining features of cross-sell and login on the website</p>
-                  </div>
-            <div class="project">
-                    <h3 class="title">Gamification - Bid and Win | Flipkart (Jul 2017- Sept 2017)</h3>
-                    <p class="desc">Designed, developed and tested the game on the e-commerce platform called Bid and Win to get traction from users during the same days.</p>
-                  </div>
       </div>
     </div>
 

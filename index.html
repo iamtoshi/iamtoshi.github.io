@@ -25,7 +25,12 @@
       margin: 80px auto;
       display: grid;
       grid-column-gap: 50px;
-      grid-template-columns: auto auto auto;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    div#grid div a img:hover{
+      box-shadow: 0 5px 15px rgba(0,0,0,0.9);
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
     }
     div#grid div a h2 {
       font-size: 30px;
@@ -69,6 +74,12 @@
               <a href="extra.html">
               <img src="./volunteer.png" alt="Extra Cirricular" />
               <h2>Extra Cirriculars</h2>
+              </a>
+          </div>
+          <div>
+              <a href="conferences.html">
+              <img src="./speaker.png" alt="speaker" />
+              <h2>Conferences</h2>
               </a>
           </div>
       </div>

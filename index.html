@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+      <title>Toshi Gupta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <style>
     body#root div h1 {
@@ -11,7 +12,7 @@
       text-align: center;
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
-    div.grid div a img {
+    div#grid div a img {
       width: 250px;
       max-height: 400px;
       display: block;
@@ -19,13 +20,13 @@
       margin-right: auto;
       border-radius: 50%;
     }
-    .grid {
+    #grid {
       margin: 80px auto;
       display: grid;
       grid-column-gap: 50px;
       grid-template-columns: auto auto auto;
     }
-    div.grid div a h2 {
+    div#grid div a h2 {
       font-size: 30px;
       font-weight: 200;
       color: black;
@@ -40,7 +41,7 @@
       display:block;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
-    div.grid div a#link {
+    div#grid div a {
       text-decoration: none;
     }
   </style>
@@ -50,22 +51,22 @@
     <div>
       <h1 class="name"> Hi! I am Toshi.</h1>
       <a href="aboutme.html">About me</a>
-      <div class="grid">
+      <div id="grid">
         <div>
-            <a href="academia.html" id="link">
-                <img src="./academics.png" />
+            <a href="academia.html">
+                <img src="./academics.png" alt="Academic Projects"/>
                 <h2>Academic Projects</h2>
             </a>
         </div>
         <div>
-            <a href="work.html" id="link">
-            <img src="./work-experience.png"/>
+            <a href="work.html">
+            <img src="./work-experience.png" alt="Work Experience" />
             <h2>Work Experience</h2>
             </a>
           </div>
           <div>
-              <a href="extra.html" id="link">
-              <img src="./volunteer.png" />
+              <a href="extra.html">
+              <img src="./volunteer.png" alt="Extra Cirricular" />
               <h2>Extra Cirriculars</h2>
               </a>
           </div>

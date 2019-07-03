@@ -39,6 +39,11 @@ div#grid div a img {
     height: 40px;
  }
 
+ #extra-icon2 {
+  width: 40px;
+  height: 40px;
+ }
+
 div#grid div a img:hover{
     box-shadow: 0 5px 15px rgba(0,0,0,0.9);
     opacity: 1;
@@ -114,7 +119,7 @@ div.container h1{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 div.container a{ 
-    color: #808080;
+    color: blue;
     margin-left:8px;
     padding-bottom: 8px;
     font-weight: 200;
@@ -187,7 +192,7 @@ div.container #header img {
 */
 
   div.common-grid div a{
-      color: #808080;
+      color: blue;
       margin-left:8px;
       padding-bottom: 8px;
       font-weight: 200;

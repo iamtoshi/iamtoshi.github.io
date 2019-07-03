@@ -91,7 +91,7 @@ function onMove(event) {
   const touch = event.targetTouches ? event.targetTouches[0] : event;
   const x = event.targetTouches ? touch.pageX : event.x;
   const y = event.targetTouches ? touch.pageY : event.y;
-    // excluding the area of colour picker
+  // excluding the area of colour picker
   if (!(x < 220 && y < 220) && isPenDown) {
     rect.x = x - 20;
     rect.y = y - 20;

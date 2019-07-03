@@ -10,6 +10,15 @@ h2 {
   color: #888;
   font-size: 2em;
 }
+body#root div h1 {
+  font-size: 54px;
+  font-weight: 500;
+  margin-top: 100px;
+  color: #333;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 body#root main h1 {
   font-size: 54px;
   font-weight: 500;

@@ -231,17 +231,20 @@ div.container #header img {
     color: #333;
   }
   
-  .topnav .icon {
+  .topnav .icon-nav {
     display: none;
   }
 
-  .header {
+  .header-title {
+    display: none;
+  }
+  .no-title {
     display: none;
   }
   
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
+    .topnav a.icon-nav {
       float: right;
       display: block;
     }
@@ -262,7 +265,7 @@ div.container #header img {
         display: block;
         justify-content: unset;
     }
-    .topnav.responsive .icon {
+    .topnav.responsive .icon-nav {
       position: absolute;
       right: 0;
       top: 0;

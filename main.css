@@ -210,6 +210,17 @@ div.container #header img {
     display: flex;
     justify-content: space-around;
   }
+  .topnav h1 {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding:0px;
+    line-height: 18px;
+  }
   
   .topnav a {
     float: left;
